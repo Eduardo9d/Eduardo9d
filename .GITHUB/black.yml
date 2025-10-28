@@ -1,1 +1,30 @@
+name: Executar script
 
+on: 
+
+  workflow_dispatch:
+    inputs:
+      name : Ambiente
+      type : environment
+
+      name: Nome
+      default: Vieira
+
+      name: Apelido 
+      default : Danho 
+
+      name: Confirme
+      type: boolean
+
+      name: Cidade 
+      type: Choise
+      - Lisboa
+      - Braga
+      - Porto
+      - Coimbra
+      
+
+jobs: 
+  build: 
+    runs-on: ubunto-latest
+    
