@@ -4,24 +4,27 @@ on:
 
   workflow_dispatch:
     inputs:
-      name : Ambiente
-      type : environment
+      ambiente:
+        type: environment
 
-      name: Nome
-      default: Vieira
-
-      name: Apelido 
-      default : Danho 
-
-      name: Confirme
-      type: boolean
-
-      name: Cidade 
-      type: Choise
-      - Lisboa
-      - Braga
-      - Porto
-      - Coimbra
+      name:
+        default: Vieira
+        required: true
+      Apelido: 
+        default : Danho 
+        required: true 
+        
+      opcao:
+        type: boolean
+        description: Confirme a execução!
+        
+      Cidade: 
+        type: Choise
+        option:
+        - Lisboa
+        - Braga
+        - Porto
+        - Coimbra
       
 
 jobs: 
