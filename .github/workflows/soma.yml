@@ -9,26 +9,18 @@ on:
     inputs:
       ambiente:
         type: environment
-      name:
-        description: "Nome do usuário"
-        default: Vieira
+        
+      valor1: 
+        default: 20
         required: true
-      apelido:
-        description: "Apelido do usuário"
-        default: Danho
+
+      valor2: 
+        default: 10
         required: true
-      opcao:
+
+      opcao: 
         type: boolean
-        description: "Confirme a execução!"
-        required: true
-      cidade:
-        type: choice
-        description: "Selecione a cidade"
-        options:
-          - Lisboa
-          - Braga
-          - Porto
-          - Coimbra
+        description: Confirme a execução!
 
 jobs:
   build:
