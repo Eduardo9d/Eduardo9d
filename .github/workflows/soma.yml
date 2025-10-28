@@ -1,4 +1,4 @@
-name: Executar script
+name: Executar script em python para somar dois numeros
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run example.py
-        run: python example.py
+      - name: Run soma.py
+        run: python soma.py
 
 
